@@ -1,6 +1,10 @@
 # ksvirt-rhce-lab
 - ks files are for three vms for the lab
 - autovirt.sh runs virt-install commands using each of the ks files to generate one of the vms
+- On my particular setup autovirt.sh took too long, so I had to split it up into individual shell scripts for each vm
+- ks.sh = server1
+- ks1.sh = tester1
+- ks2.sh = outsider1
 - server1 and tester1 are on 192.168.122.0/24 network
 - outsider1 is on 192.168.100.0/24 network
 - On a stock install on Centos7 it only had one bridge virbr0 with network 192.168.122.0/24
